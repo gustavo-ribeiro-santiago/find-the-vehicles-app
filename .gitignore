@@ -39,8 +39,8 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+frontend/node_modules/
+frontend/jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -84,7 +84,7 @@ web_modules/
 .parcel-cache
 
 # Next.js build output
-.next
+frontend/.next
 out
 
 # Nuxt.js build / generate output
