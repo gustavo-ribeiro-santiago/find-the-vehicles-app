@@ -1,0 +1,147 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color:rgba(40, 120, 191, 0.238);
+}
+
+.header {
+  display: inherit;
+  justify-content: center;
+  align-items: inherit;
+  text-align: center;
+  font-size: 0.85rem;
+  max-width: var(--max-width);
+  width: 70%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  background-color:white;
+  border-radius: 15px;
+  padding-top: 8px;
+}
+
+.header i {
+  margin-right: 2rem;
+}
+
+.about {
+  width: 90%;
+  max-width: 1020px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two equal columns */
+  gap: 20px; /* Space between columns */
+  margin-top: 8px;
+}
+
+.column {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  background-color:white;
+  border-radius: 15px;
+}
+
+.dottedSquare {
+  width: 300px; /* Set the width of the square */
+  height: 200px; /* Set the height of the square */
+  border: 2px dotted black; /* Set the border style to dotted */
+  background-color: transparent; /* Set the background to transparent */
+  border-radius: 15px; /* Set the border radius to make rounded corners */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  cursor:pointer;
+}
+
+.sampleImage {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+
+  .card:hover span {
+    transform: translateX(4px);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .card:hover span {
+    transform: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    padding: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    width: 98%;
+  }
+
+  .center {
+    padding: 8rem 0 6rem;
+  }
+
+  .center::before {
+    transform: none;
+    height: 300px;
+  }
+
+  .header {
+    font-size: 0.65rem;
+    width: 100%;
+  }
+
+  .header i {
+    margin-right: 0.7rem;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .vercelLogo {
+    filter: invert(1);
+  }
+
+  .logo {
+    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
