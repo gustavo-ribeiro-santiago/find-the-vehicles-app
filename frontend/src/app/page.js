@@ -58,7 +58,7 @@ export default function Home() {
     formData.append('file', file);
     (async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/predict/', {
+        const response = await fetch('http://18.212.239.210:8000/predict/', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
