@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "find-the-vehicles",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/src/$1"
+    }
+  ]
+}
