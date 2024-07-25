@@ -58,7 +58,7 @@ export default function Home() {
     formData.append('file', file);
     (async () => {
       try {
-        const response = await fetch('http://18.212.239.210:8000/predict/', {
+        const response = await fetch('https://find-the-vehicles-backend.com/predict/', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
