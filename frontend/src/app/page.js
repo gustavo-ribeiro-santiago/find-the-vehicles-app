@@ -251,7 +251,7 @@ const About = () => {
                 <strong> Autonomous Driving:</strong>
                 <ul>
                   <li>
-                    <strong>Obstacle Detection:</strong> The model's detection
+                    <strong>Obstacle Detection:</strong> The model&apos;s detection
                     capabilities can be integrated into autonomous driving
                     systems to detect other vehicles on the road, aiding in
                     navigation and collision avoidance.
@@ -265,7 +265,7 @@ const About = () => {
                 </ul>
               </li>
             </ol>
-            For more information, please visit the project's GitHub repository
+            For more information, please visit the project&apos;s GitHub repository
             at{' '}
             <a href="https://github.com/gustavo-ribeiro-santiago/find-the-vehicles-app">
               https://github.com/gustavo-ribeiro-santiago/find-the-vehicles-app
