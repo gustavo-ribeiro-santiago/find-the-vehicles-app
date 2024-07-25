@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import React, { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const fileInputRef = useRef(null);
@@ -323,21 +324,24 @@ const Samples = ({ handleSampleImageClick }) => {
     <>
       <div className="my-3">Sample Images:</div>
       <div>
-        <img
+        <Image
           className={styles.sampleImage + ' mx-2'}
           onClick={handleSampleImageClick}
           src="example1.jpg"
-        ></img>
-        <img
+          alt="Example 1"
+        ></Image>
+        <Image
           className={styles.sampleImage + ' mx-2'}
           onClick={handleSampleImageClick}
           src="example2.jpg"
-        ></img>
-        <img
+          alt="Example 2"
+        ></Image>
+        <Image
           className={styles.sampleImage + ' mx-2'}
           onClick={handleSampleImageClick}
           src="example3.jpg"
-        ></img>
+          alt="Example 3"
+        ></Image>
       </div>
     </>
   );
