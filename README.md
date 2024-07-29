@@ -63,5 +63,13 @@ docker run -d -p 8000:8000 --name find-the-vehicles-backend gustavoribeirosantia
 Navigate to the model-training directory to explore the Jupyter notebook used for model training.
 
 ## License
-MIT
+This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Contact
+Gustavo Ribeiro Santiago
+
+Email: gustavorsa@poli.ufrj.br
+
+GitHub: https://github.com/gustavo-ribeiro-santiago
+
+Feel free to reach out if you have any questions or feedback!
